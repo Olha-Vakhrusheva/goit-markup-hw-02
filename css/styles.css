@@ -11,7 +11,6 @@
   /* Переменные шрифтов */
   --main-font-size: 14px;
 }
-
 /* оформление Портфолио */
 
 body {
@@ -27,28 +26,41 @@ body {
 .header-logo {
   color: var(--title-text-color);
   text-decoration: none;
-  font-family: Raleway sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
+  letter-spacing: 0.03em;
 }
 .link-logo {
   color: var(--logo-accent-color);
   text-decoration: none;
-  font-family: Raleway sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
+  letter-spacing: 0.03em;
 }
 .link-list {
   list-style: none;
   font-size: var(--main-font-size);
   font-weight: 500;
   line-height: 1.63;
+  letter-spacing: 0.02em;
 }
 .link {
   color: var(--title-text-color);
   text-decoration: none;
 }
+
+.link:hover,
+.link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--logo-accent-color);
+}
+
 .link-current {
   color: var(--logo-accent-color);
   text-decoration: none;
@@ -58,31 +70,36 @@ body {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--logo-accent-color);
-}
 
 /* Фильтр */
 
-.filters {
+.current-filter {
   color: var(--title-text-color);
   background-color: var(--button-color);
   text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
   cursor: pointer;
 }
+
+.current-filter:active,
+.current-filter:hover,
+.current-filter:focus {
+  background-color: var(--logo-accent-color);
+  color: var(--primary-white-color);
+}
+
 .filters:hover,
 .filters:focus {
   color: var(--primary-white-color);
   background-color: var(--logo-accent-color);
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.63;
 }
 
 .filter-list {
   list-style: none;
+  letter-spacing: 0.03em;
 }
 
 /* Список работ */
@@ -91,12 +108,14 @@ body {
   list-style: none;
   font-size: 16px;
   line-height: 1.86;
+  letter-spacing: 0.03em;
 }
 .project-name {
   color: var(--title-text-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 /* Футер */
@@ -104,19 +123,19 @@ body {
 .footer-link {
   background-color: var(--footer-background-color);
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .address-footer {
   color: var(--primary-white-color);
   text-decoration: none;
+  font-style: normal;
 }
 .contact-footer {
   color: var(--contact-footer);
   text-decoration: none;
-}
-.contact-footer:hover,
-.contact-footer:focus {
-  color: var(--logo-accent-color);
+  font-style: normal;
+  font-weight: ;
 }
 
 .footer-logo {
@@ -138,6 +157,7 @@ body {
 .footer-list {
   list-style: none;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* оформление index.html */
@@ -149,19 +169,26 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-background {
   background-color: var(--footer-background-color);
+  letter-spacing: 0.06em;
 }
 
 /* Кнопка Заказать услугу */
 .button-hero {
   color: var(--primary-white-color);
   background-color: var(--logo-accent-color);
-  font-family: Roboto, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
+  letter-spacing: 0.06em;
   font-weight: 700;
   cursor: pointer;
+  border: none;
 }
 
 /* Преимущества */
@@ -171,12 +198,14 @@ body {
   font-weight: 700;
   line-height: 1.17;
   font-size: var(--main-font-size);
+  text-transform: uppercase;
 }
 
 .desc-list {
   font-size: 14px;
   line-height: 1.71;
   list-style: none;
+  letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся */
@@ -187,6 +216,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .photo-list {
@@ -201,6 +231,11 @@ body {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
+}
+
+.team-background {
+  background-color: var(--button-color);
+  letter-spacing: 0.03em;
 }
 
 .position {
