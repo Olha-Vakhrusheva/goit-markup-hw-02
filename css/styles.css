@@ -141,7 +141,7 @@ body {
 .footer-logo {
   color: var(--primary-white-color);
   text-decoration: none;
-  font-family: Raleway sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.17;
@@ -149,7 +149,7 @@ body {
 .link-logo-footer {
   color: var(--logo-accent-color);
   text-decoration: none;
-  font-family: Raleway sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.17;
